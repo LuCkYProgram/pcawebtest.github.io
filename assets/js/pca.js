@@ -48,7 +48,7 @@ function initControls(camera, renderer) {
     return ctrl;
 }
 
-async function readData(source="encoded_faces.json", colorMap="hot") {
+async function readData(source="/assets/js/encoded_faces.json", colorMap="hot") {
     let jsonContent = await (await fetch(source)).json();
     let result = [];
     let minX = Number.MAX_VALUE;

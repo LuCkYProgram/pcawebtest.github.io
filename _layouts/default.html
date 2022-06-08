@@ -8,6 +8,21 @@
       </section>
       <section id="projects">
         {% include projects.html %}
+        <h2>
+          Principal Component Analysis of Dlib face model
+        </h2>
+        <div class="ui-container">
+          <div id="threejs-container">
+            <script src="app.js" type="module"></script>
+          </div>
+          <div class="hovered">
+            <div id="hovered-name"><i>Select a point</i></div>
+            <div id="hovered-pca"></div>
+            <a id="hovered-link" href="#">
+              <img id="hovered-img" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="placeholder" />
+            </a>
+          </div>
+        </div>
       </section>
         {{ content }}
       {% include footer.html %}
